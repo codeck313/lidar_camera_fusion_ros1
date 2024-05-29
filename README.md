@@ -22,6 +22,10 @@ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.108 image:=<
 
 3. Obtain the extrensic parameter between lidar and camera using either of the methods [target-based-method](https://github.com/ankitdhall/lidar_camera_calibration) or [learning-based-method](https://github.com/OpenCalib/CalibAnything). Target based method provides higher accurarcy but takes time to assemble the setup. Learning based can be done immediately but provides lower accuracy in general. 
 
+<p align='center'>
+<img width="80%" src="/images/calibration-setup.jpg"/>
+</p>
+
 4. Change the extrensic parameter in the cfg file with the values obtained during calibration.
 5. Change the point cloud topic and image topic in the fusion launch file and then launch it.
 ```

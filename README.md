@@ -1,3 +1,4 @@
+
 # Lidar Camera Fusion ROS1
 This package contains the nodes to  fuse the pointcloud with camera stream. For the experiment VLP 32 and FLIR Camera is used on ROS Melodic running on Intel NUC. For the fusion we require the extrinsic parameters between lidar and camera. To obtain them one can use [target-based-method](https://github.com/ankitdhall/lidar_camera_calibration) or [learning-based-method](https://github.com/OpenCalib/CalibAnything).
 
@@ -26,3 +27,8 @@ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.108 image:=<
 ```
   roslaunch lidar_camera_fusion fusion.launch 
 ```
+
+
+<p align='center'>
+<img width="80%" src="/images/image_projected_on_pointcloud.png"/>
+</p>
